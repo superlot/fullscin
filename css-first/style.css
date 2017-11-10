@@ -58,7 +58,7 @@
   position: absolute;
     top: 50px;
     bottom: 0;
-    width: 100%;
+    width: 95%;
     height: auto;
     margin-top: -50px;
 }
@@ -87,7 +87,7 @@
   bottom: 0;
   right: 0;
   z-index: 9999;
-  border: none;
+  *border: none;
 }
 
 .iframe-full-screen .iframe iframe {
