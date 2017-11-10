@@ -51,7 +51,7 @@
   position: absolute;
   height: 50px;
   width: 100%;
-   z-index: 9999;
+   *z-index: 9999;
 }
 
 .iframe-full-screen .iframe-content {
@@ -100,7 +100,7 @@
 .wrapper {
   max-width: 1000px;
   margin: 20px auto;
-  padding: 0 20px;
+  padding: 0 10%;
 }
 
 @media all and (max-height: 400px){
