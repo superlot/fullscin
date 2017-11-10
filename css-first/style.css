@@ -56,11 +56,11 @@
 
 .iframe-full-screen .iframe-content {
   position: absolute;
-    top: 50px;
+    top: 20px;
     bottom: 0;
-    width: 95%;
+    width: 100%;
     height: auto;
-    margin-top: -50px;
+    margin-top: -70px;
 }
 
 .iframe-full-screen .iframe-header a {
