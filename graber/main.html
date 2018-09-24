@@ -1,0 +1,25 @@
+<html>
+<head>
+  <link rel="import" href="https://superlot.github.io/fullscin/">
+  <style>
+    body {
+      width:500px;
+	  height:300px;
+    }
+  </style>
+</head>
+<body>
+  ...<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+
+    // Grab DOM from warning.html's document.
+    var el = content.querySelector('.iframe');
+
+    document.body.appendChild(el.cloneNode(true));
+  </script>
+  
+</body>
+</html>
