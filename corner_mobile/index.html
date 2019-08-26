@@ -5,15 +5,17 @@
 -->
 
 <!DOCTYPE html>
-<html xmlns='http://www.w3.org/1999/xhtml'>
+<html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1">
+    
     <title>KeyShotVR</title>
+	
+	<link rel="stylesheet" href="./style.css">
     <style type="text/css">
       body { *-ms-touch-action: ;
-height:1200px;	  }
+	  }
       
       #back{
 margin-top:%;
@@ -50,6 +52,15 @@ max-width:80% !important;
 max-width:80% !important;
 }
 	}
+	
+	#r1{
+	top:0;
+	width:200px;
+	position:absolute;
+  z-index:999;
+	z-index: 9999 !important;
+	loat:right;
+}
   
     </style>
     <script type="text/javascript" src="index/files/KeyShotVR.js"></script>
@@ -95,5 +106,30 @@ max-width:80% !important;
    <a id="back" href="javascript:history.back();"><img src="images/b1.png" alt="HTML tutorial" style="width:50px;height:50px;border:0;"></a>
     
     <div id="KeyShotVR"></div>
+	<input id="full" type="image" src="https://image.flaticon.com/icons/png/512/60/60694.png" width="30" >
+	
+	<input type="range" id="r1" min="50" max="200" value="100"
+			 oninput="fun2()" >
+			 
+			 
+			 <script>
+			 /*
+function fun1() {
+		var rng=document.getElementById('r1');
+		var fram=document.body.style["max-width"];
+		fram=rng.value+'5px';
+		alert.(fram);
+		}
+	
+	
+}*/
+function fun2() {
+	var rng=document.getElementById('r2'); //rng - это Input
+    var ifram=document.getElementById('KeyShotVR'); // div - блок test
+	
+	ifram=rng.value + '5%';
+}
+</script>
+	<script  src="./script.js"></script>
   </body>
 </html>
